@@ -116,7 +116,7 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
-# 2020-11-06: Custom package list
+# Custom package list
 bluez-utils
 bzip2
 cpupower
@@ -124,6 +124,7 @@ cryptsetup
 efivar
 encfs
 git
+gnupg
 gpart
 grep
 gzip
@@ -181,7 +182,6 @@ zsh-completions
 zsh-syntax-highlighting
 zsh-theme-powerlevel10k
 # Desktop
-# AUR: chrome-gnome-shell
 chromium
 clementine
 eog
@@ -198,7 +198,6 @@ nautilus
 network-manager-applet
 owncloud-client
 pavucontrol
-# polkit-explorer
 polkit-gnome
 pulseaudio-alsa
 pulsemixer
