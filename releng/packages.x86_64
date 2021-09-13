@@ -198,6 +198,8 @@ mpv
 mtr
 nautilus
 network-manager-applet
+nvidia
+nvidia-settings
 owncloud-client
 pavucontrol
 polkit-gnome
@@ -218,7 +220,6 @@ xf86-input-vmmouse
 xf86-video-amdgpu
 xf86-video-fbdev
 xf86-video-intel
-xf86-video-nouveau
 xf86-video-vesa
 xf86-video-vmware
 xfce4
