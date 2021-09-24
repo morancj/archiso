@@ -139,7 +139,11 @@ iproute2
 iputils
 kmscon
 less
+lib32-mesa
+lib32-libva-mesa-driver
+lib32-mesa-vdpau
 libdvdcss
+libva-mesa-driver
 libva-intel-driver
 libva-vdpau-driver
 linux-headers
@@ -193,6 +197,8 @@ gparted
 guvcview
 libreoffice-fresh-en-gb
 lightdm
+mesa
+mesa-vdpau
 mplayer
 mpv
 mtr
