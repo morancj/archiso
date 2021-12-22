@@ -11,9 +11,6 @@ via the convenience script [35mInstallation_guide[0m.
 arch-zfs repo and software are preinstalled. Use "lsmod | grep zfs" to check
 the kernel modules are loaded.
 
-Username and password are both "livecd" (without quotes). sudo and graphical polkit
-escalation are both available using "livecd" as the password.
-
 Start a desktop environment with "startxfce4".
 
 Have A Nice Day!
