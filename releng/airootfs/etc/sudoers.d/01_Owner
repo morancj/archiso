@@ -1,0 +1,31 @@
+# Controls "root" access for livecd user.
+
+Cmnd_Alias  DEVICE_CONTROL = /sbin/blkid, /usr/bin/dhcpcd, /usr/bin/dhcpcd -k, /sbin/fdisk -l, /usr/bin/iostat, /usr/sbin/powertop, /usr/bin/iftop, /usr/bin/nethogs, /usr/bin/iwctl
+
+Cmnd_Alias  READORLIST = /bin/ls, /bin/cat, /bin/zcat, /bin/grep, /bin/zgrep, /bin/less, /bin/zless, /bin/more, /bin/zmore, /usr/bin/diff, /usr/bin/tail, /usr/bin/head, /usr/sbin/tcpdump, /usr/bin/tshark, /usr/bin/getent, /usr/bin/time, /usr/sbin/nethogs, /usr/bin/du, /usr/bin/iptables -L
+Cmnd_Alias  FILE_MODIFY = /bin/chown, /bin/chgrp, /bin/chmod,  /usr/sbin/logrotate, /usr/bin/journalctl
+Cmnd_Alias  SYSTEM_UPDATE_NOMODIFY = /usr/bin/apt-get update, /usr/bin/apt-get dist-upgrade -d, /usr/bin/apt-get dist-upgrade -d *, /usr/bin/apt-get dist-upgrade -s
+Cmnd_Alias  SYSTEM_UPDATE_MODIFY = /usr/bin/apt-get dist-upgrade -d *, /usr/bin/apt-get upgrade -d *, /usr/bin/apt-get dist-upgrade -y, /usr/bin/apt-get upgrade -y, /usr/bin/pikaur -Syu, /usr/bin/pacman -Syu
+
+Cmnd_Alias  DEVICE_POWER_CONTROL = /usr/sbin/pm-suspend-hybrid, /usr/sbin/pm-suspend, /usr/sbin/pm-hibernate, /bin/systemctl hibernate, /bin/systemctl hybrid-sleep, /usr/sbin/powertop
+Cmnd_Alias  FIX_VPN_DNS = /bin/rm /etc/resolv.conf, /bin/ln -s /run/resolvconf/resolv.conf /etc/resolv.conf, /bin/ln -s /lib/systemd/resolv.conf /etc/resolv.conf
+
+Cmnd_Alias  NETWORKING = /usr/bin/nmap, /usr/bin/nmap *, /usr/bin/systemd-resolve --flush-caches, /usr/bin/ss
+
+Cmnd_Alias  SERVICE_START = /usr/bin/systemctl start *
+Cmnd_Alias  SERVICE_RESTART = /usr/bin/systemctl restart systemd-networkd.service, /usr/bin/systemctl restart systemd-resolved.service
+Cmnd_Alias  SERVICE_STOP = /usr/bin/systemctl stop *
+
+Cmnd_Alias  ZFS_READORLIST = /sbin/zfs list, /sbin/zfs list *, /sbin/zfs get, /sbin/zfs get *, /sbin/zpool list, /sbin/zpool list *, /sbin/zpool iostat, /sbin/zpool iostat *, /sbin/zpool status, /sbin/zpool status *, /sbin/zpool history, /sbin/zpool history *, /sbin/zpool events, /sbin/zpool events *, /sbin/zpool get, /sbin/zpool get *
+Cmnd_Alias  ZFS_SNAP_CREATE = /sbin/zfs snapshot *, /sbin/zfs snap *
+Cmnd_Alias  ZFS_SCRUB = /sbin/zpool scrub, /sbin/zpool scrub *
+Cmnd_Alias ZPOOL_MANAGEMENT = /usr/bin/zpool import -d /dev/disk/by-id *, /usr/bin/zpool import -N -d /dev/disk/by-id *
+Cmnd_Alias ENCRYPTED_DISK_MANAGEMENT = /usr/bin/cryptsetup open /dev/sd* *
+Cmnd_Alias CONTAINERS = /usr/bin/docker, /usr/bin/ctr
+
+# Catch-all, "wheel" group members can run anything with a password:
+%wheel ALL = (ALL) PASSWD: ALL
+
+# "wheel" group members can run these commands without entering a password:
+%wheel  ALL = (ALL) NOPASSWD: DEVICE_CONTROL, READORLIST, FILE_MODIFY, SYSTEM_UPDATE_NOMODIFY, SYSTEM_UPDATE_MODIFY, DEVICE_POWER_CONTROL, FIX_VPN_DNS, NETWORKING, SERVICE_START, SERVICE_RESTART, ZFS_READORLIST, ZFS_SNAP_CREATE, ZFS_SCRUB, ZPOOL_MANAGEMENT, ENCRYPTED_DISK_MANAGEMENT, CONTAINERS
+
