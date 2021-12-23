@@ -149,6 +149,7 @@ libva-intel-driver
 libva-vdpau-driver
 linux-headers
 lsb-release
+lshw
 man-db
 man-pages
 meld
