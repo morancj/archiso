@@ -1,0 +1,13 @@
+root:x:0:root
+adm:x:4:livecd
+wheel:x:10:livecd
+uucp:x:14:livecd
+livecd:x:1000:livecd
+audio:x:993:livecd
+bluetooth:x:1003:livecd
+cups:x:209:livecd
+disk:x:996:livecd
+input:x:985:livecd
+libvirt:x:959:livecd
+systemd-journal:x:995:livecd
+video:x:983:livecd
