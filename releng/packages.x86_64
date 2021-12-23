@@ -140,12 +140,12 @@ iproute2
 iputils
 kmscon
 less
-lib32-mesa
 lib32-libva-mesa-driver
+lib32-mesa
 lib32-mesa-vdpau
 libdvdcss
-libva-mesa-driver
 libva-intel-driver
+libva-mesa-driver
 libva-vdpau-driver
 linux-headers
 lsb-release
