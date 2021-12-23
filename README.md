@@ -22,16 +22,7 @@ hardware (don't buy nvidia for Linux!)
 - [`sudo`](https://www.sudo.ws/) and
 [`polkit`](https://gitlab.freedesktop.org/polkit/polkit/)
 rules for `livecd` user
-- 
 - New boot option to user 25% of RAM for root partition
-
-### Important notes
-
-If using as an install medium, become `root` with e.g. `sudo -l` **before**
-starting the installation.
-
-One should not generally install software when booting as a live disk.
-The "use 25% of RAM as root fs space" option is for those who know what they're doing.
 
 ### Comparing with upstream
 
@@ -41,3 +32,12 @@ compare with e.g:
 ```shell
 → meld /usr/share/archiso/configs/releng releng
 ```
+
+## Important notes
+
+If using as an install medium, become `root` with e.g. `sudo -i` **before**
+starting the installation.
+
+One should not generally install software when booting as a live disk.
+The "use 25% of RAM as root fs space" option is for those who know what they're
+doing.
