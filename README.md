@@ -14,7 +14,7 @@ Can be used as a live/rescue disk, or as an Arch Linux installation disk.
 
 - ZFS support
 - Added "live CD" type XFCE4 graphical user environment with useful (to me)
-software and basic "rescue CD"
+desktop software and basic "rescue CD" functionality
 - Current proprietary nvidia driver, since nouveau is pretty useless on modern
 hardware (don't buy nvidia for Linux!)
 - Removed older `ntfs-3g`: use in-kernel `ntfs3` instead
