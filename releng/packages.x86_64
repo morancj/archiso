@@ -4,7 +4,6 @@ arch-install-scripts
 archinstall
 b43-fwcutter
 base
-base-devel
 bind-tools
 brltty
 broadcom-wl
@@ -72,7 +71,6 @@ ndisc6
 nfs-utils
 nilfs-utils
 nmap
-ntfs-3g
 nvme-cli
 openconnect
 openssh
@@ -120,6 +118,7 @@ xfsprogs
 xl2tpd
 zsh
 # Custom package list
+base-devel
 bluez-utils
 bzip2
 cpupower
@@ -195,6 +194,7 @@ firefox
 galculator
 gedit
 gparted
+gtk2
 guvcview
 libreoffice-fresh-en-gb
 lightdm
