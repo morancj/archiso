@@ -19,12 +19,12 @@ Cmnd_Alias  SERVICE_STOP = /usr/bin/systemctl stop *
 Cmnd_Alias  ZFS_READORLIST = /sbin/zfs list, /sbin/zfs list *, /sbin/zfs get, /sbin/zfs get *, /sbin/zpool list, /sbin/zpool list *, /sbin/zpool iostat, /sbin/zpool iostat *, /sbin/zpool status, /sbin/zpool status *, /sbin/zpool history, /sbin/zpool history *, /sbin/zpool events, /sbin/zpool events *, /sbin/zpool get, /sbin/zpool get *
 Cmnd_Alias  ZFS_SNAP_CREATE = /sbin/zfs snapshot *, /sbin/zfs snap *
 Cmnd_Alias  ZFS_SCRUB = /sbin/zpool scrub, /sbin/zpool scrub *
-Cmnd_Alias ZPOOL_MANAGEMENT = /usr/bin/zpool import -d /dev/disk/by-id *, /usr/bin/zpool import -N -d /dev/disk/by-id *
-Cmnd_Alias ENCRYPTED_DISK_MANAGEMENT = /usr/bin/cryptsetup open /dev/sd* *
-Cmnd_Alias CONTAINERS = /usr/bin/docker, /usr/bin/ctr
+Cmnd_Alias  ZPOOL_MANAGEMENT = /usr/bin/zpool import -d /dev/disk/by-id *, /usr/bin/zpool import -N -d /dev/disk/by-id *
+Cmnd_Alias  ENCRYPTED_DISK_MANAGEMENT = /usr/bin/cryptsetup open /dev/sd* *
+Cmnd_Alias  CONTAINERS = /usr/bin/docker, /usr/bin/ctr
 
 # Catch-all, "wheel" group members can run anything with a password:
-%wheel ALL = (ALL) PASSWD: ALL
+%wheel  ALL = (ALL) PASSWD: ALL
 
 # "wheel" group members can run these commands without entering a password:
 %wheel  ALL = (ALL) NOPASSWD: DEVICE_CONTROL, READORLIST, FILE_MODIFY, SYSTEM_UPDATE_NOMODIFY, SYSTEM_UPDATE_MODIFY, DEVICE_POWER_CONTROL, FIX_VPN_DNS, NETWORKING, SERVICE_START, SERVICE_RESTART, ZFS_READORLIST, ZFS_SNAP_CREATE, ZFS_SCRUB, ZPOOL_MANAGEMENT, ENCRYPTED_DISK_MANAGEMENT, CONTAINERS
