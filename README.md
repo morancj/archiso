@@ -41,3 +41,5 @@ starting the installation.
 One should not generally install software when booting as a live disk.
 The "use 25% of RAM as root fs space" option is for those who know what they're
 doing.
+
+Boot options blacklisting the nvidia* modules: should be useful for older nvidia cards unsupported by the latest drivers.
