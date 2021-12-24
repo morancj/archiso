@@ -22,7 +22,7 @@ hardware (don't buy nvidia for Linux!)
 - [`sudo`](https://www.sudo.ws/) and
 [`polkit`](https://gitlab.freedesktop.org/polkit/polkit/)
 rules for `livecd` user
-- New boot option to user 25% of RAM for root partition
+- New boot option to use 25% of RAM for root partition
 
 ### Comparing with upstream
 
