@@ -51,6 +51,7 @@ libusb-compat
 linux
 linux-atm
 linux-firmware
+linux-firmware-marvell
 livecd-sounds
 lsscsi
 lvm2
@@ -71,6 +72,7 @@ ndisc6
 nfs-utils
 nilfs-utils
 nmap
+ntfs-3g
 nvme-cli
 openconnect
 openssh
