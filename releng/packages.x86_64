@@ -125,6 +125,7 @@ zsh
 # Custom package list
 base-devel
 bluez-utils
+bolt
 bzip2
 cpupower
 cryptsetup
