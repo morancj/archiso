@@ -17,12 +17,15 @@ Can be used as a live/rescue disk, or as an Arch Linux installation disk.
 desktop software and basic "rescue CD" functionality
 - Current proprietary nvidia driver, since nouveau is pretty useless on modern
 hardware (don't buy nvidia for Linux!)
-- Removed older `ntfs-3g`: use in-kernel `ntfs3` instead
-- Starts with `livecd` user, not `root`
+- Optional `livecd` user, if you prefer not to use root
 - [`sudo`](https://www.sudo.ws/) and
 [`polkit`](https://gitlab.freedesktop.org/polkit/polkit/)
 rules for `livecd` user
-- New boot option to use 25% of RAM for root partition
+- Boot option to use 25% of RAM for root partition
+- Boot option to prevent loading the nvidia* modules: should be useful for older
+nvidia cards unsupported by the latest drivers.
+- NetworkManager, for GUI network config in XFCE
+- en_GB locale
 
 ### Comparing with upstream
 
@@ -35,11 +38,21 @@ compare with e.g:
 
 ## Important notes
 
-If using as an install medium, become `root` with e.g. `sudo -i` **before**
-starting the installation.
+If using the `livecd`, become `root` with e.g. `sudo -i` **before** starting the
+installation.
 
 One should not generally install software when booting as a live disk.
 The "use 25% of RAM as root fs space" option is for those who know what they're
 doing.
 
-Boot options blacklisting the nvidia* modules: should be useful for older nvidia cards unsupported by the latest drivers.
+### Build notes
+
+Use disk label `ARCHZFS` for the ISO, e.g:
+
+```shell
+sudo mkarchiso -w /tmp/archiso-tmp -o /some/path/for/iso/ -L ARCHZFS -v $(pwd)/releng
+```
+
+## Known issues
+
+Some of the XFCE icons are missing: this is due to the DE's default icon theme.
