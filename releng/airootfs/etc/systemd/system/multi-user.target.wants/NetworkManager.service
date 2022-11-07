@@ -1,1 +1,1 @@
-/usr/lib/systemd/systemNetworkManager.service
+/usr/lib/systemd/system/NetworkManager.service
