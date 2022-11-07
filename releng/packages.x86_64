@@ -38,8 +38,6 @@ grub
 hdparm
 hyperv
 intel-ucode
-ipw2100-fw
-ipw2200-fw
 irssi
 iw
 iwd
@@ -225,8 +223,6 @@ remmina
 solaar
 thunar
 thunar-volman
-tracker
-tracker-miners
 vlc
 xclip
 xf86-input-vmmouse
