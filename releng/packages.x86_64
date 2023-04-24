@@ -38,8 +38,6 @@ grub
 hdparm
 hyperv
 intel-ucode
-ipw2100-fw
-ipw2200-fw
 irssi
 iw
 iwd
@@ -62,6 +60,7 @@ man-pages
 mc
 mdadm
 memtest86+
+memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
@@ -143,7 +142,6 @@ inetutils
 iotop
 iproute2
 iputils
-kmscon
 less
 lib32-libva-mesa-driver
 lib32-mesa
@@ -224,8 +222,6 @@ remmina
 solaar
 thunar
 thunar-volman
-tracker
-tracker-miners
 vlc
 xclip
 xf86-input-vmmouse
