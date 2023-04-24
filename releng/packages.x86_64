@@ -60,6 +60,7 @@ man-pages
 mc
 mdadm
 memtest86+
+memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
@@ -142,7 +143,6 @@ inetutils
 iotop
 iproute2
 iputils
-kmscon
 less
 lib32-libva-mesa-driver
 lib32-mesa
