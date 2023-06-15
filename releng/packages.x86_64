@@ -246,5 +246,3 @@ xprintidle
 xsettingsd
 # ZFS
 zfs-linux
-zfs-linux-lts
-zfs-utils
