@@ -245,4 +245,6 @@ xorg-xwininfo
 xprintidle
 xsettingsd
 # ZFS
-zfs-dkms
+zfs-linux
+zfs-linux-lts
+zfs-utils
