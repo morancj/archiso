@@ -8,16 +8,16 @@ Ethernet, WLAN and WWAN interfaces using DHCP should work automatically.
 After connecting to the internet, the installation guide can be accessed
 via the convenience script [35mInstallation_guide[0m.
 
-arch-zfs repo and software are preinstalled. Use "lsmod | grep zfs" to check
+archzfs repo and software are preinstalled. Use "lsmod | grep zfs" to check
 the kernel modules are loaded.
 
-Username and password are both "livecd" (without quotes). sudo and graphical polkit
-escalation are both available using "livecd" as the password.
+Start a desktop environment with "startxfce4". Polkit is enabled for the
+`livecd` user, allowing graphical applications such as `gparted` to run with
+elevated privileges.
 
-[35m** IMPORTANT: If using to install Arch Linux, BECOME ROOT FIRST! **
-** Do this with `sudo -i`                                        **[0m.
+To become root at a CLI, use `sudo -i -u root`.
 
-Start a desktop environment with "startxfce4".
+[35m** IMPORTANT: If using to install Arch Linux, YOU MUST BE ROOT! **[0m.
 
 Have A Nice Day!
 [41m [41m [41m [40m [44m [40m [41m [46m [45m [41m [46m [43m [41m [44m [45m [40m [44m [40m [41m [44m [41m [41m [46m [42m [41m [44m [43m [41m [45m [40m [40m [44m [40m [41m [44m [42m [41m [46m [44m [41m [46m [47m [0m
