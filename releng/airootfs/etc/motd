@@ -15,9 +15,9 @@ Start a desktop environment with "startxfce4". Polkit is enabled for the
 `livecd` user, allowing graphical applications such as `gparted` to run with
 elevated privileges.
 
-To become root at a CLI, use `sudo -i -u root`.
-
 [35m** IMPORTANT: If using to install Arch Linux, YOU MUST BE ROOT! **[0m.
+
+To become root at a CLI, use `sudo -i`.
 
 Have A Nice Day!
 [41m [41m [41m [40m [44m [40m [41m [46m [45m [41m [46m [43m [41m [44m [45m [40m [44m [40m [41m [44m [41m [41m [46m [42m [41m [44m [43m [41m [45m [40m [40m [44m [40m [41m [44m [42m [41m [46m [44m [41m [46m [47m [0m
