@@ -17,6 +17,7 @@ elevated privileges.
 
 [35m** IMPORTANT: If using to install Arch Linux, YOU MUST BE ROOT! **[0m.
 
+Password for the `livecd` user is `livecd`.
 To become root at a CLI, use `sudo -i`.
 
 Have A Nice Day!
