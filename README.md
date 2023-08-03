@@ -24,8 +24,9 @@ rules for `livecd` user
 - Boot option to use 25% of RAM for root partition
 - Boot option to prevent loading the nvidia* modules: should be useful for older
 nvidia cards unsupported by the latest drivers.
-- NetworkManager, for GUI network config in XFCE
-- en_GB locale
+- NetworkManager applet for GUI network config in XFCE
+- codecs and thumbnailers
+- `en_GB` locale
 
 ### Comparing with upstream
 
