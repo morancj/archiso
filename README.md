@@ -17,7 +17,7 @@ Can be used as a live/rescue disk, or as an Arch Linux installation disk.
 desktop software and basic "rescue CD" functionality
 - Current proprietary nvidia driver, since nouveau is pretty useless on modern
 hardware (don't buy nvidia for Linux!)
-- Optional `livecd` user, if you prefer not to use root
+- Defaults to user `livecd`
 - [`sudo`](https://www.sudo.ws/) and
 [`polkit`](https://gitlab.freedesktop.org/polkit/polkit/)
 rules for `livecd` user
@@ -39,7 +39,7 @@ compare with e.g:
 
 ## Important notes
 
-If using the `livecd`, become `root` with e.g. `sudo -i` **before** starting the
+If using the `livecd` user, become `root` with e.g. `sudo -i` **before** starting the
 installation.
 
 One should not generally install software when booting as a live disk.
