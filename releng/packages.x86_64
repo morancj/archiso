@@ -15,7 +15,6 @@ cloud-init
 cryptsetup
 darkhttpd
 ddrescue
-dhclient
 dhcpcd
 diffutils
 dmidecode
@@ -32,7 +31,6 @@ f2fs-tools
 fatresize
 foot-terminfo
 fsarchiver
-gnu-netcat
 gpart
 gpm
 gptfdisk
@@ -68,6 +66,7 @@ memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
+mmc-utils
 modemmanager
 mtools
 nano
@@ -94,8 +93,6 @@ pv
 qemu-guest-agent
 refind
 reflector
-reiserfsprogs
-rp-pppoe
 rsync
 rxvt-unicode-terminfo
 screen
@@ -121,11 +118,11 @@ usbutils
 vim
 virtualbox-guest-utils-nox
 vpnc
-wezterm-terminfo
 wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
+xdg-utils
 xfsprogs
 xl2tpd
 zsh
@@ -142,7 +139,6 @@ grep
 gzip
 haveged
 hwinfo
-i7z
 iftop
 inetutils
 iotop
@@ -154,7 +150,6 @@ lib32-mesa-vdpau
 libdvdcss
 libva-intel-driver
 libva-mesa-driver
-libva-vdpau-driver
 linux-headers
 lsb-release
 lshw
@@ -185,7 +180,6 @@ yamllint
 zsh-autosuggestions
 zsh-completions
 zsh-syntax-highlighting
-zsh-theme-powerlevel10k
 # Desktop
 chromium
 eog
@@ -227,7 +221,6 @@ xf86-video-amdgpu
 xf86-video-fbdev
 xf86-video-intel
 xf86-video-vesa
-xf86-video-vmware
 xfce4
 xfce4-goodies
 xorg-server
