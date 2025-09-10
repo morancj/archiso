@@ -1,3 +1,1 @@
-[archzfs]
-SigLevel = Required
 Server = https://github.com/archzfs/archzfs/releases/download/experimental
